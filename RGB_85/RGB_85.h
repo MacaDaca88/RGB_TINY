@@ -1,3 +1,5 @@
+//test
+
 #ifndef RGB_85_h
 #define RGB_85_h
 
@@ -10,7 +12,8 @@ public:
   RGB::RGB(int Red, int Green, int Blue, bool common);
 
   void off();
-  
+  void fade(int rgb[3],int fadeAmount, int max );
+  void fade(int Red, int Green, int Blue, int fadeAmount, int max);
   void setColor(int rgb[3]);
   void setColor(int Red, int Green, int Blue);
 
@@ -30,6 +33,8 @@ private:
 
 
   void color(int Red, int Green, int Blue);
+	void fade(int Red, int Green, int Blue, int fadeAmount, int max, bool up);
+
 };
 
 #endif
